@@ -1,17 +1,11 @@
-## Features
-
-- login service
-  - post
-  - username + password
-- register service
-  - post
-  - username + password
+## [Features](Feature.md)
 
 ## Current Issues
 
 - permitAll is not working
-  - probably, due to the current version of Spring Security
-  - ref: https://github.com/spring-projects/spring-security/issues/12586
+  - problem: the `Application` file is not at root the package
+  - solution: add an explicit base package scan, like @SpringBootApplication(scanBasePackages = "chipbk10.com.example.authservices")
+  - ref: https://shorturl.at/kyCSV
 - 8080 port is taken
 
 - ref: https://github.com/spring-projects/spring-security/issues
